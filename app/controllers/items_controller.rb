@@ -6,9 +6,9 @@ class ItemsController < ApplicationController
   def index
     @items = Item.all
   end
-  
+
   def empty
-    current_user.cart.items
+    current_user.cart.items = []
   end
   # GET /items/1
   # GET /items/1.json
